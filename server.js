@@ -8,5 +8,5 @@ app.use(express.json());
 const logsRoutes = require('./logs.routes');
 app.use('/api/logs', logsRoutes);
 
-app.listen(8050, () => console.log('Backend en puerto 8050'));
+app.listen(80, () => console.log('Backend en puerto 80'));
 
