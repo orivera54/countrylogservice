@@ -1,11 +1,9 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-  user: 'neondb_owner',
-  host: 'ep-damp-sunset-aecai72u-pooler.c-2.us-east-2.aws.neon.tech',
-  database: 'cities_app',
-  password: 'npg_j84tViNZLzcs',
-  port: 5432,
+  connectionString: 'postgresql://neondb_owner:npg_j84tViNZLzcs@ep-damp-sunset-aecai72u-pooler.c-2.us-east-2.aws.neon.tech/cities_app?sslmode=require&channel_binding=require'
 });
+
+
 
 module.exports = pool;
