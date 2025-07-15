@@ -6,7 +6,8 @@ const app = express();
 const corsOptions = {
   origin: [
     'http://localhost:4200',
-    'https://countryapp-qqfda3mrw-orivera54s-projects.vercel.app'
+    'https://countryapp-qqfda3mrw-orivera54s-projects.vercel.app',
+    'https://countryapp-ten.vercel.app/'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
